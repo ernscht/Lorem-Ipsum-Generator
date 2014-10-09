@@ -50,7 +50,7 @@ class lorem {
 			$ipsum_offset -= $total;
 		}
 
-		return ucfirst( strtolower( implode( ' ', array_slice( $words, $ipsum_offset_keep, $lenght ) ) ) ) . $end;
+		return ucfirst( $start . implode( ' ', array_slice( $words, $ipsum_offset_keep, $lenght ) ) ) . $end;
 	}
 
 	public static function text( $total = 5, $lenght = 10, $sep = "\n\n" ) {
@@ -71,7 +71,7 @@ class lorem {
 	}
 
 	public static function html_rec( $text, $tags ) {
-		if ( $tags ) {
+		if ( is_array( $tags ) && $tags !== array( '' ) ) {
 			$text  = explode( ' ', $text );
 			$count = count( $text );
 			$index = 0;
