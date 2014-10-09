@@ -10,26 +10,8 @@
 class lorem {
 
 	public static function words() {
-		return explode( ' ', str_repeat( 'lorem ipsum dolor sit amet consectetur adipiscing ' .
-		                                 'elit nam vel augue nibh dictum faucibus fusce varius odio ' .
-		                                 'quis sollicitudin rhoncus libero turpis vestibulum metus congue ' .
-		                                 'ligula tortor eu sem integer iaculis nisl eget sapien placerat ' .
-		                                 'volutpat phasellus tincidunt purus vitae ultrices felis mi ' .
-		                                 'sodales ac dui ut pellentesque neque vehicula nulla bibendum ' .
-		                                 'dapibus consequat urna interdum orci duis mattis velit pharetra ' .
-		                                 'molestie euismod donec justo hendrerit id sagittis nec posuere ' .
-		                                 'mauris sed vulputate nunc ullamcorper non fermentum enim ' .
-		                                 'lobortis habitant morbi tristique senectus et netus malesuada ' .
-		                                 'fames egestas cras blandit a ultricies risus proin arcu quam ' .
-		                                 'maecenas rutrum fringilla porta etiam suspendisse magna ' .
-		                                 'scelerisque erat tellus condimentum at feugiat lacus ' .
-		                                 'lectus mollis aliquam in praesent luctus lacinia ' .
-		                                 'dignissim viverra elementum porttitor ante tempor ' .
-		                                 'curabitur leo nullam accumsan commodo laoreet est ' .
-		                                 'massa aenean eros hac habitasse platea dictumst ' .
-		                                 'semper gravida cum sociis natoque penatibus ' .
-		                                 'magnis dis parturient montes nascetur ' .
-		                                 'ridiculus mus', 10 ) );
+		$text = file_get_contents( dirname( __DIR__ ) . '/text/lorem.txt' );
+		return explode( ' ', str_repeat( $text, 10 ) );
 	}
 
 	public static function get( $lenght = 100, $start = '', $end = '.' ) {
