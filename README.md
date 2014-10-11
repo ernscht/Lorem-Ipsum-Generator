@@ -1,8 +1,8 @@
 # Lorem Ipsum Generator
 
-This class is written by Kadir 'Akkara' Yardımcı {@link http://kadiryardimci.com}
-Original source on GitHub: https://github.com/akkara/Lorem-Ipsum-Generator
-This source on GitHub: https://github.com/ernscht/Lorem-Ipsum-Generator
+This class is written by Kadir 'Akkara' Yardımcı {@link http://kadiryardimci.com} 
+Original source on GitHub: https://github.com/akkara/Lorem-Ipsum-Generator 
+Fork on GitHub: https://github.com/ernscht/Lorem-Ipsum-Generator
 
 This is ...
 
