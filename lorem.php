@@ -10,7 +10,7 @@
 class lorem {
 
 	public static function words() {
-		$text = file_get_contents( dirname( __DIR__ ) . '/text/lorem.txt' );
+		$text = file_get_contents( __DIR__ . '/text/lorem.txt' );
 
 		return explode( ' ', str_repeat( $text, 10 ) );
 	}
